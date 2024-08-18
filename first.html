@@ -2,14 +2,15 @@
 <html>
 
 <head>
-    <title>Erster HTML Test</title>
+    <title>Erster HTML & CSS Test</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="first.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <ul class="navlist">
                 <li><a href="#Kontakt">Kontakt</a></li>
                 <li><a href="#Über Mich">Über Mich</a></li>
                 <li><a href="#Einkaufsliste">Einkaufsliste</a></li>
@@ -18,10 +19,12 @@
 
             </ul>
         </nav>
-        <h1>Erste HTML Seite</h1>
+        <div class="welcome">
+            <h1 class="textcenter">Erste HTML & CSS Seite</h1>
+        </div>
     </header>
     <main>
-        <section id="Einkaufsliste">
+        <section class="basic-section" id="Einkaufsliste">
             <h2>Einkaufsliste</h2>
             <ul>
                 <li>Kiwi</li>
@@ -38,20 +41,20 @@
                 <tbody>
                     <tr>
                         <td>Nazmije</td>
-                        <td>60</td>
+                        <td class="center">60</td>
                     </tr>
                     <tr>
                         <td>Liridon</td>
-                        <td>22</td>
+                        <td class="center">22</td>
                     </tr>
                     <tr>
                         <td>Elfat</td>
-                        <td>24</td>
+                        <td class="center">24</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-        <section id="Kontakt">
+        <section class="basic-section" id="Kontakt">
             <h2>Kontakt</h2>
             <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -67,38 +70,48 @@
                 no
                 sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
-            <form action="" method="get">
+            <form class="form" action="" method="get">
                 <input type="text" name="name" placeholder="Benutzename" required>
                 <input type="password" name="password" placeholder="Passwort" required>
-                <input type="submit">
+                <input class="btn" type="submit">
             </form>
         </section>
-        <section id="Über Mich">
+        <section class="basic-section" id="Über Mich">
             <h2>Über Mich</h2>
             <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et
+                Lorem ipsum dolor sit amet, <span class="special-text">consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et
+                </span>
                 dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                 Stet
                 clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
                 amet,
-                consetetur sadipscing elitr, <br>
-                <hr> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                erat,
+                consetetur sadipscing elitr,
+                sed diam nonumy eirmod <i> <b> tempor invidunt ut labore et dolore magna aliquyam
+                        erat,
+                </i> </b>
                 sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
                 no
                 sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
         </section>
-        <section id="Bilder">
+        <section class="basic-section" id="Bilder">
             <h2>Bilder</h2>
             <h3>Spike Spiegel aus Cowboy Bebop</h3>
-            <img src="Spike-Spiegel.Cowboy-Bebop.webp" alt="Bild von Spike-Spiegel">
+            <img class="abstände" src="images/Spike-Spiegel.Cowboy-Bebop.webp" alt="Bild von Spike-Spiegel">
         </section>
     </main>
-    <footer>
-        <hr>
-        <a href=" https://www.loremipsum.de/" target="_blank">Schwachsinniger Text</a>
+    <hr>
+    <footer class="footer">
+        <h2>Links</h2>
+        <ul class="footer-links">
+            <li>
+                <a href=" https://www.loremipsum.de/" target="_blank">Schwachsinniger Text</a>
+            </li>
+            <li>
+                <a href="https://tenor.com/de/search/naruto-shippuden-gifs" target="_blank">NAruto Gifs</a>
+            </li>
+        </ul>
     </footer>
 </body>
 
