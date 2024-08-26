@@ -85,3 +85,15 @@ h.forEach(function (item) {
     console.log(item);
 });
 console.log("Fertig");
+$(document).ready(function() {
+    console.log("ATch");
+});
+
+/*
+document.getElementById("title").textContent="Neue Überschrift"; 
+*/
+console.log($("#title").text());
+
+$("#tut-btn").on('click',function() {
+    alert("tach")
+});
