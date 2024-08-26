@@ -94,6 +94,8 @@ document.getElementById("title").textContent="Neue Überschrift";
 */
 console.log($("#title").text());
 
-$("#tut-btn").on('click',function() {
-    alert("tach")
+$("#tut-li").on('click',function() {
+    var text = $(this).text();
+    var output = $("#tut-output");
+        output.text(text);
 });
