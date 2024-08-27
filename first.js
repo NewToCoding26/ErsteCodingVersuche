@@ -99,3 +99,28 @@ $("#tut-li").on('click',function() {
     var output = $("#tut-output");
         output.text(text);
 });
+
+// Elelemt löschen
+$("#zettel").on('click', '.del-item', function() {
+    $(this).closest("li").remove();
+});
+
+// Element hinzufügen
+$("#tut-btn").on('click', function() {
+    var text = $("#tut-txt").val();
+    if(text.length === 0) {
+        alert("Bitte etwas eintragen!");
+    }else{
+       $("#zettel").append("<li class='tut-li'>"+ text +" <input class='del-item' type='submit' value='x'> </li>");
+    }
+});
+
+// section ein &ausblende
+$("#navlist li a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("section").removeClass ("section-active");
+    $(section).addClass ("section-active");
+    $("#navlist li a").removeClass ("tab-active");
+    $(this).addClass ("tab-active");
+});

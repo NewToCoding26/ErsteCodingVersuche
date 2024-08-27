@@ -6,6 +6,14 @@ h2 {
     margin: 0;
 }
 
+section {
+    display: none;
+}
+
+.section-active {
+    display: block;
+}
+
 .navbar {
     height: 60px;
     background-color: blue;
@@ -31,6 +39,10 @@ h2 {
 .navlist li a:hover {
     color: fuchsia;
     text-decoration: underline;
+}
+
+.tab-active {
+    color: fuchsia !important;
 }
 
 .textcenter {

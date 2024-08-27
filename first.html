@@ -10,8 +10,8 @@
 <body>
     <header>
         <nav class="navbar">
-            <ul class="navlist">
-                <li><a href="#Kontakt">Kontakt</a></li>
+            <ul id="navlist" class="navlist">
+                <li><a class="tab-active" href="#Kontakt">Kontakt</a></li>
                 <li><a href="#Über Mich">Über Mich</a></li>
                 <li><a href="#Einkaufsliste">Einkaufsliste</a></li>
                 <li><a href="#Bilder">Bilder</a></li>
@@ -24,12 +24,12 @@
         </div>
     </header>
     <main>
-        <section class="basic-section" id="Einkaufsliste">
+        <section class="basic-section section-active" id="Einkaufsliste">
             <h2>Einkaufsliste</h2>
-            <ul>
-                <li class="tut-li">Kiwi</li>
-                <li class="tut-li">Annanas</li>
-                <li class="tut-li">Körniger Frischkäse</li>
+            <ul id="zettel">
+                <li class="tut-li">Kiwi <input  class="del-item" type="submit" value="x"> </li>
+                <li class="tut-li">Annanas <input  class="del-item" type="submit" value="x"> </li>
+                <li class="tut-li">Körniger Frischkäse <input  class="del-item" type="submit" value="x"> </li>
             </ul>
             <div class="form">
                 <input type="text" id="tut-txt">
